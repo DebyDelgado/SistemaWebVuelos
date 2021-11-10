@@ -1,0 +1,41 @@
+﻿* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+}
+
+#header {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+#menu {
+    background-color: lightsteelblue;
+    text-align: center;
+    height: 50px;
+    font-size: 2em;
+}
+
+#sidebar {
+    background-color: black;
+    
+    float: left;
+    color: white;
+    height: 400px;
+    font-size: 1em;
+    text-align: center;
+}
+
+#content {
+}
+
+#footer {
+    clear: both;
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}

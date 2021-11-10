@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header">
+        <h1>SISTEMA VUELOS</h1>
+
+    </div>
+    <div id="menu">
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Vuelos", "Index", "Vuelo")
+       
+    </div>
+    <div id="sidebar">
+
+        @if (IsSectionDefined("Sidebar"))
+        {
+            @RenderSection("Sidebar")
+        }
+        else
+        {
+            <h2>Zona Editable Opcional</h2>
+
+        }
+
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <div id="footer">
+        
+        <p>info@vuelo.com</p>
+
+    </div>
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
